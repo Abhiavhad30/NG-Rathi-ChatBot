@@ -1,0 +1,73 @@
+version: "3.1"
+stories:
+
+- story: greet and goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: user affirms
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: user denies
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: user is happy
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- story: user is unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- story: user challenges bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: user asks ongoing projects
+  steps:
+  - intent: ask_ongoing_projects
+  - action: utter_ask_ongoing_projects
+
+- story: user asks upcoming projects
+  steps:
+  - intent: ask_upcoming_projects
+  - action: utter_ask_upcoming_projects
+
+- story: user asks completed projects
+  steps:
+  - intent: ask_completed_projects
+  - action: utter_ask_completed_projects
+
+- story: user asks head office
+  steps:
+  - intent: ask_head_office
+  - action: utter_ask_head_office
+
+- story: user asks owner
+  steps:
+  - intent: ask_owner
+  - action: utter_ask_owner
+
+- story: user asks sales contact
+  steps:
+  - intent: ask_sales_contact
+  - action: utter_ask_sales_contact
+
+- story: user asks booking process
+  steps:
+  - intent: ask_booking_process
+  - action: utter_ask_booking_process
+
+
+
+

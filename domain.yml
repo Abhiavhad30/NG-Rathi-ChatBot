@@ -1,0 +1,120 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_ongoing_projects
+  - ask_upcoming_projects
+  - ask_completed_projects
+  - ask_head_office
+  - ask_owner
+  - ask_sales_contact
+  - ask_booking_process
+
+responses:
+  utter_greet:
+    - text: "Hello! Welcome to NG Rathi Realty Group. How can I assist you today?"
+    - text: "Hi there! Looking for a new home or investment opportunity?"
+    - text: "Hey! Feel free to ask about our projects, booking process, or anything else."
+    - text: "Good to see you! Want to explore our ongoing or upcoming projects?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day ahead."
+    - text: "See you soon! Feel free to reach out anytime."
+    - text: "Thanks for visiting NG Rathi Realty. Take care!"
+    - text: "Bye! Don’t forget to check out our enquiry form or WhatsApp chat if needed."
+
+  utter_affirm:
+    - text: "Great! Let me help you with that."
+    - text: "Perfect. I’ll guide you through the next steps."
+    - text: "Awesome! You’re in the right place."
+    - text: "Glad to hear that. Let’s move forward."
+
+  utter_deny:
+    - text: "No worries. Let me know if you change your mind."
+    - text: "Alright, feel free to ask anything else."
+    - text: "Okay! I’m here if you need help later."
+    - text: "Understood. Let me know how else I can assist."
+
+  utter_mood_great:
+    - text: "That’s wonderful to hear! Let’s make your day even better with a great property."
+    - text: "Awesome! Sounds like you’re ready to explore some amazing projects."
+    - text: "Glad you’re feeling great! Want to check out our latest developments?"
+    - text: "Perfect mood for house hunting! Let me show you what’s new."
+
+  utter_mood_unhappy:
+    - text: "I’m sorry to hear that. Maybe browsing beautiful homes will lift your mood."
+    - text: "Tough day? Let me help you find something exciting to look forward to."
+    - text: "I understand. If you need assistance or just want to explore, I’m here."
+    - text: "Sorry you're feeling down. Want to chat or check out our upcoming projects?"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_ask_ongoing_projects:
+    - text: |
+        Here are our ongoing projects:
+        
+        🏢 **Nandanvan** – Luxurious 2BHK & 3BHK homes in Vishrantwadi, Pune.  
+        🏘️ **AAkruti** – Stylish 4BHK Row Houses in Bavdhan.  
+        🏬 **Ladies Katta** – Commercial shops tailored for women’s fashion on Handewadi Road.  
+        🏡 **Madhuban** – Affordable 1BHK & 2BHK housing in Pirangut.  
+        🏢 **Benchmark** – Premium commercial offices in Undri.
+        
+        For more details, visit [NG Rathi Projects](https://ngrathirealty.com/projects.html) or call +91 83800 08338.  
+
+  utter_ask_upcoming_projects:
+      - text: |
+          Here are our upcoming projects:
+          
+          🏢 **Commercial Spaces, Wagholi** – Premium office units designed for modern businesses.  
+          🏘️ **Residential Tower, Undri** – Elegant 3BHK apartments offering comfort and convenience.  
+          🏡 **Row House Project, Wagholi** – Luxurious 4BHK villas with spacious layouts and green surroundings.
+          
+          For updates and launch dates, visit [NG Rathi Projects](https://ngrathirealty.com/projects.html) or call +91 83800 08338.
+          
+
+  utter_ask_completed_projects:
+      - text: |
+          Here are our completed and sold-out projects:
+
+          🏢 **Palmnest, Wagholi** – Elegant 2BHK apartments in a serene location.  
+          🏢 **Vrundavan, Vishrantwadi** – Premium 2BHK homes with modern amenities.  
+          🏢 **Urbano, Wagholi** – Smart 1BHK & 2BHK residences designed for urban living.
+
+          These projects are fully sold out. For current availability, check our [ongoing projects](https://ngrathirealty.com/projects.html) or call +91 83800 08338.
+
+  utter_ask_head_office:
+    - text: "Our head office is located at Prestige Point, Shukrawar Peth, Pune, Maharashtra 411002."
+
+  utter_ask_owner:
+    - text: "NG Rathi Realty Group is led by Mr. Nitin Rathi, known for his visionary leadership in real estate."
+
+  utter_ask_sales_contact:
+    - text: |
+        You can reach our sales team at +91 83800 08338 or email us at sales@ngrathirealty.com.
+
+        📩 Click below to make an enquiry or chat with us on WhatsApp:
+        👉 [Enquiry Now](https://ngrathirealty.com/contact.html)
+        👉 [Chat on WhatsApp](https://wa.me/918380008338)
+
+  utter_ask_booking_process:
+    - text: |
+        Our booking process is simple:
+        1️⃣ Choose your preferred project and unit type  
+        2️⃣ Contact our sales team for availability  
+        3️⃣ Submit necessary documents and booking amount  
+        4️⃣ Receive confirmation and agreement
+
+        📩 Click below to start your enquiry or chat with us directly:
+        👉 [Enquiry Now](https://ngrathirealty.com/contact.html)
+        👉 [Chat on WhatsApp](https://wa.me/918380008338)        
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

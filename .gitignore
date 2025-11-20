@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environment
+venv/
+env/
+.myenv/
+.venv/
+
+# Rasa model files
+models/
+*.tar.gz
+
+# Rasa cache and database
+rasa.db
+events.db
+
+# Django database
+db.sqlite3
+
+# IDE/editor configs
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+*.env
+
+# Node/npm (if used for frontend)
+node_modules/
+*.lock
+
+# Static files (if auto-generated)
+staticfiles/

@@ -1,0 +1,75 @@
+version: "3.1"
+rules:
+
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond to affirmation
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: Respond to denial
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- rule: Respond to happy mood
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+
+- rule: Respond to unhappy mood
+  steps:
+  - intent: mood_unhappy
+  - action: utter_mood_unhappy
+
+- rule: Respond to bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to ongoing projects
+  steps:
+  - intent: ask_ongoing_projects
+  - action: utter_ask_ongoing_projects
+
+- rule: Respond to upcoming projects
+  steps:
+  - intent: ask_upcoming_projects
+  - action: utter_ask_upcoming_projects
+
+- rule: Respond to completed projects
+  steps:
+  - intent: ask_completed_projects
+  - action: utter_ask_completed_projects
+
+- rule: Respond to head office query
+  steps:
+  - intent: ask_head_office
+  - action: utter_ask_head_office
+
+- rule: Respond to owner query
+  steps:
+  - intent: ask_owner
+  - action: utter_ask_owner
+
+- rule: Respond to sales contact query
+  steps:
+  - intent: ask_sales_contact
+  - action: utter_ask_sales_contact
+
+- rule: Respond to booking process query
+  steps:
+  - intent: ask_booking_process
+  - action: utter_ask_booking_process
+
+
+

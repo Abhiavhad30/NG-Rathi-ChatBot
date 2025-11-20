@@ -1,0 +1,168 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - good afternoon
+    - hey buddy
+    - hi team
+    - greetings
+    - howdy
+    - hi there
+    - hey everyone
+    - what's up
+    - hey friend
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - bye bye
+    - good night
+    - cu
+    - catch you later
+    - take care
+    - have a nice day
+    - see you around
+    - talk to you soon
+    - later
+    - see ya
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolutely
+    - sure
+    - definitely
+    - yeah
+    - right
+    - sounds perfect
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - nah
+    - not at all
+    - I disagree
+    - I don’t want that
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - super stoked
+    - extremely good
+    - so good
+    - excellent
+    - fantastic
+    - awesome
+    - feeling awesome today
+    - I’m in a great mood
+    - everything is perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - I feel down
+    - I’m upset
+    - I’m not okay
+    - I feel terrible
+    - today was a bad day
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: ask_ongoing_projects
+  examples: |
+    - Show me ongoing projects
+    - What projects are currently active?
+    - Do you have any under-construction sites?
+    - Which projects are in progress?
+    - Tell me about your ongoing developments
+    - Any current real estate projects?
+    - What are you building right now?
+
+- intent: ask_upcoming_projects
+  examples: |
+    - What are your upcoming projects?
+    - Show me future developments
+    - Do you have any new projects launching soon?
+    - What's coming up next?
+    - Tell me about upcoming real estate plans
+    - Any new residential or commercial projects?
+    - What's planned for the future?
+
+- intent: ask_completed_projects
+  examples: |
+    - Show me completed projects
+    - What projects have you finished?
+    - Do you have any sold-out properties?
+    - Which developments are completed?
+    - Tell me about your past projects
+    - Any projects that are fully booked?
+    - What are your completed real estate ventures?
+
+- intent: ask_head_office
+  examples: |
+    - Where is your head office?
+    - What's your main office location?
+    - Where can I visit NG Rathi Realty?
+
+- intent: ask_owner
+  examples: |
+    - Who is the owner of NG Rathi Realty?
+    - Who founded your company?
+    - Who runs NG Rathi Realty Group?
+
+- intent: ask_sales_contact
+  examples: |
+    - How can I contact your sales team?
+    - I want to speak to someone about buying
+    - Give me sales contact info
+    - Who do I talk to for booking?
+
+- intent: ask_booking_process
+  examples: |
+    - What's the booking process?
+    - How do I book a flat?
+    - What steps are involved in booking?
+    - Can you guide me through booking?
+    
