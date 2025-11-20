@@ -1,4 +1,4 @@
-setuptools<66
+#setuptools<66
 wheel
 
 rasa==3.6.18
