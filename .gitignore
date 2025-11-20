@@ -13,9 +13,9 @@ env/
 .myenv/
 .venv/
 
-# Rasa model files
-models/
-*.tar.gz
+## Rasa model files
+#models/
+#*.tar.gz
 
 # Rasa cache and database
 rasa.db
