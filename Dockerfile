@@ -1,13 +1,18 @@
 FROM rasa/rasa:3.6.18-full
 
-# Copy project files into the container
-COPY . /app
+# Work directory
+WORKDIR /app
 
-# Install extra dependencies if needed
-RUN pip install --no-cache-dir -r /app/requirements.txt
+# Copy project files
+COPY . .
 
-# Expose port used by Rasa
+# Fix: prevent setuptools uninstall permission error
+RUN pip install --upgrade --ignore-installed setuptools==65.7.0
+
+# Install requirements
+RUN pip install --no-cache-dir --upgrade pip
+RUN pip install --no-cache-dir -r requirements.txt
+
 EXPOSE 8080
 
-# Run Rasa server
 CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "8080"]
