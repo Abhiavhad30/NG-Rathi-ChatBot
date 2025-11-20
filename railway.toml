@@ -1,8 +1,11 @@
-[build]
-builder = "Python"
-
 [deploy]
-runtime = "python-3.10"
+startCommand = "rasa run --enable-api --cors '*' --port $PORT"
 
-[env]
-PYTHON_VERSION = "3.10.12"
+#[build]
+#builder = "Python"
+#
+#[deploy]
+#runtime = "python-3.10"
+#
+#[env]
+#PYTHON_VERSION = "3.10.12"
