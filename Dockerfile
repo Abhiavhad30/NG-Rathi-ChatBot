@@ -1,16 +1,16 @@
 FROM rasa/rasa:3.6.18-full
 
-# Work directory
 WORKDIR /app
 
-# Copy project files
 COPY . .
 
-# Fix: prevent setuptools uninstall permission error
-RUN pip install --upgrade --ignore-installed setuptools==65.7.0
+# Fix for setuptools permission issue on Render
+RUN pip install --ignore-installed setuptools==65.7.0
 
-# Install requirements
+# Upgrade pip safely
 RUN pip install --no-cache-dir --upgrade pip
+
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8080
