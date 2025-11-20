@@ -1,2 +1,4 @@
 rasa==3.6.18
+rasa-sdk==3.6.2
+sqlalchemy<2.0
 requests
