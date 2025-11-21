@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, Response ,jsonify
 import requests
 
 app = Flask(__name__)
@@ -10,8 +10,13 @@ def health():
 @app.route("/webhooks/rest/webhook", methods=["POST"])
 def forward():
     try:
-        response = requests.post("http://localhost:10000/webhooks/rest/webhook", json=request.get_json())
-        return jsonify(response.json())
+        r = requests.post(
+            "http://localhost:10000/webhooks/rest/webhook",
+            json=request.get_json(),
+            timeout=30,
+        )
+        # Pass through Rasa's response exactly (including 500 body)
+        return Response(r.content, status=r.status_code, headers={"Content-Type": r.headers.get("Content-Type", "application/json")})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
