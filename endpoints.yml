@@ -1,3 +1,6 @@
+health:
+  url: "http://localhost:5005"
+
 # This file contains the different endpoints your bot can use.
 
 # Server where the models are pulled from.
