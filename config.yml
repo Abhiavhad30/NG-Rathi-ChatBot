@@ -9,9 +9,9 @@ pipeline:
   - name: CountVectorsFeaturizer
     analyzer: char_wb
     min_ngram: 1
-    max_ngram: 4
+    max_ngram: 3
   - name: DIETClassifier
-    epochs: 50
+    epochs: 25
   - name: EntitySynonymMapper
 
 policies:
