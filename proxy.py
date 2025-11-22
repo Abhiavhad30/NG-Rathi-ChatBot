@@ -5,10 +5,9 @@ import time
 app = Flask(__name__)
 
 def wait_for_rasa():
-    """Wait until Rasa REST service is ready before forwarding requests."""
-    for _ in range(30):  # up to ~60 seconds
+    for _ in range(30):  # wait up to 60 seconds
         try:
-            r = requests.get("http://localhost:10000/status", timeout=5)
+            r = requests.get("http://localhost:10000/version", timeout=5)
             if r.status_code == 200:
                 print("✅ Rasa is ready")
                 return True
@@ -16,6 +15,7 @@ def wait_for_rasa():
             print(f"⏳ Waiting for Rasa: {e}")
         time.sleep(2)
     return False
+
 
 @app.route("/", methods=["GET"])
 def health():
